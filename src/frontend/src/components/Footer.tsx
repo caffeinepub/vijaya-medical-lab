@@ -93,25 +93,14 @@ export default function Footer() {
           <p className="text-[#555] text-sm">
             © {year} Dripszy. All rights reserved.
           </p>
-          <div className="flex items-center gap-4 text-[#555] text-sm">
-            <button
-              type="button"
-              onClick={() => navigate({ to: "/admin" })}
-              className="hover:text-primary transition-colors"
-              data-ocid="footer.link"
-            >
-              Admin Login
-            </button>
-            <span>·</span>
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white/60 transition-colors"
-            >
-              Built with ❤️ using caffeine.ai
-            </a>
-          </div>
+          <button
+            type="button"
+            onClick={() => navigate({ to: "/admin" })}
+            className="text-[#555] text-sm hover:text-primary transition-colors"
+            data-ocid="footer.link"
+          >
+            Admin Login
+          </button>
         </div>
       </div>
     </footer>
